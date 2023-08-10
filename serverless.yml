@@ -1,5 +1,4 @@
-service:
-  name: serverless-sample
+service: serverless-sample
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
@@ -11,14 +10,11 @@ plugins:
 
 provider:
   name: aws
-  runtime: nodejs18.x
+  runtime: nodejs16.x
+  region: ap-northeast-1
 
 functions:
   first:
     handler: first.hello
   second:
     handler: second.hello
-    events:
-      - httpApi:
-          method: get
-          path: /second
