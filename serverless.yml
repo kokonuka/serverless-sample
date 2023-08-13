@@ -8,6 +8,12 @@ frameworkVersion: "3"
 plugins:
   - serverless-webpack
   - serverless-iam-roles-per-function
+  - serverless-api-gateway-throttling
+
+custom:
+  apiGatewayThrottling:
+    maxRequestsPerSecond: 10
+    maxConcurrentRequests: 5
 
 provider:
   name: aws

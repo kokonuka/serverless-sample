@@ -14,6 +14,7 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.6.0",
     "serverless": "^3.34.0",
+    "serverless-api-gateway-throttling": "^2.0.3",
     "serverless-iam-roles-per-function": "^3.2.0",
     "serverless-webpack": "^5.3.1",
     "webpack": "^4.35.2"
